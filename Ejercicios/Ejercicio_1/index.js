@@ -27,26 +27,33 @@ form.addEventListener("submit", (ev) =>{
             stock: elementStock.checked
         }
 
-        productsArr.push(product);
+        if(product.name !== "" && product.description !== "" && product.image !== "" && elementPrice.value > 0 && product.color !== ""){
+
+            productsArr.push(product);
         
-        productsArr.forEach((p) => {
-            console.log(p);
+            productsArr.forEach((p) => {
+                console.log(p);
+    
+                const productDiv = document.createElement("div");
+    
+                const availability = p.stock ? "DISPONIBLE" : "NO DISPONIBLE";
+    
+                productDiv.innerHTML = 
+                
+                `
+                    <h2>${p.name}</h2>
+                    <p>${p.description}</p>
+                    <p>${p.price}</p>
+                    <p>${p.color}</p>
+                    <p>${availability}</p>
+                `
+    
+                div_products_in_page.appendChild(productDiv);
+            });
+        }
 
-            const productDiv = document.createElement("div");
-
-            const availability = p.stock ? "DISPONIBLE" : "NO DISPONIBLE";
-
-            productDiv.innerHTML = 
-            
-            `
-                <h2>${p.name}</h2>
-                <p>${p.description}</p>
-                <p>${p.price}</p>
-                <p>${p.color}</p>
-                <p>${availability}</p>
-            `
-
-            div_products_in_page.appendChild(productDiv);
-        });
+        else{
+            alert("Todos los campos deben estar llenos");
+        }
         
 });
