@@ -7,3 +7,76 @@
         margin: 10px;
     }
 }
+
+.guitar_image{
+    height: 350px;
+    border-width: 2px;
+    border: black;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#images_area{
+
+    display: flex;
+    flex-direction: row;
+    
+    @mixin images_divs_settings(){
+        margin: 15px;
+        transition: transform .2s; 
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    &_guitar_1{
+        @include images_divs_settings();
+    }
+    &_guitar_2{
+        @include images_divs_settings();
+    }
+    &_guitar_3{
+        @include images_divs_settings();
+    }
+    &_guitar_4{
+        @include images_divs_settings();
+    }
+    &_guitar_5{
+        @include images_divs_settings();
+    }
+
+
+}
+
+.showcase_area{
+    width: 100%;
+    position: absolute;
+    
+}
+
+.frontShowcase{
+    height: 100%;
+    /* width: 100%; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000000a3;
+    display: flex;
+    align-items: center;
+    img{
+        
+    margin-left: 25%;
+    margin-right: 25%;
+    }
+}
+
+.overlay_class_button{
+    top: 0;
+}

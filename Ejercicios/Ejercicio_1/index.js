@@ -21,7 +21,7 @@ form.addEventListener("submit", (ev) =>{
         let product = {
             name: elementName.value,
             description: elementDescription.value,
-            image: elementImage.value,
+            image: elementImage.files[0],
             price: elementPrice.value + ".00$",
             color: elementColor.value,
             stock: elementStock.checked
@@ -45,6 +45,7 @@ form.addEventListener("submit", (ev) =>{
                     <p>${p.description}</p>
                     <p>${p.price}</p>
                     <p>${p.color}</p>
+                    <img src="${p.image}">
                     <p>${availability}</p>
                 `
     

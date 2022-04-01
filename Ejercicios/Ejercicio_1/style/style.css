@@ -12,4 +12,122 @@
 .form_element {
   margin: 10px;
 }
+
+.guitar_image {
+  height: 350px;
+  border-width: 2px;
+  border: black;
+}
+
+.guitar_image:hover {
+  cursor: pointer;
+}
+
+#images_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#images_area_guitar_1 {
+  margin: 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#images_area_guitar_1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#images_area_guitar_2 {
+  margin: 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#images_area_guitar_2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#images_area_guitar_3 {
+  margin: 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#images_area_guitar_3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#images_area_guitar_4 {
+  margin: 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#images_area_guitar_4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#images_area_guitar_5 {
+  margin: 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#images_area_guitar_5:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.showcase_area {
+  width: 100%;
+  position: absolute;
+}
+
+.frontShowcase {
+  height: 100%;
+  /* width: 100%; */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000000a3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frontShowcase img {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.overlay_class_button {
+  top: 0;
+}
 /*# sourceMappingURL=style.css.map */
